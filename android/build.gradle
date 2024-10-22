@@ -46,6 +46,10 @@ android {
     defaultConfig {
         minSdkVersion 23
     }
+
+    if (project.android.hasProperty("namespace")) {
+        namespace 'ru.rustore.flutter_rustore_push'
+    }
 }
 
 dependencies {
