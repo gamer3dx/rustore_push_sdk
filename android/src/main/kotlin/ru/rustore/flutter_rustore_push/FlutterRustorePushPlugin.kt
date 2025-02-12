@@ -14,10 +14,6 @@ class FlutterRustorePushPlugin : FlutterPlugin {
 
     override fun onAttachedToEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
         context = binding.applicationContext
-        if (android.os.Build.VERSION.SDK_INT <= 22){
-            Log.d("SDK less than 23, not initializing, bye")
-            return
-        }
 
         Log.d(
             "Trying to resolve Application from Context: ${context.javaClass.name}"
@@ -29,6 +25,7 @@ class FlutterRustorePushPlugin : FlutterPlugin {
         FlutterRustorePushService.client = callbacks
 
         RuStorePush.setUp(binding.binaryMessenger, rustore)
+
     }
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
