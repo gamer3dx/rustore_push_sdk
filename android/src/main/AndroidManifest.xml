@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-sdk tools:overrideLibrary="ru.rustore.sdk.pushclient, ru.rustore.sdk.coreui, com.vk.push.core, com.vk.push.core.network, com.vk.push.common, ru.rustore.sdk.metrics, ru.rustore.sdk.core, ru.rustore.sdk.reactive" />
+    <uses-sdk tools:overrideLibrary="ru.rustore.sdk.pushclient, ru.rustore.sdk.coreui, com.vk.push.core, com.vk.push.core.network, com.vk.push.common, ru.rustore.sdk.metrics, ru.rustore.sdk.core, ru.rustore.sdk.reactive, com.vk.push.core.remote.config" />
     <application>
        <service
                android:name="ru.rustore.flutter_rustore_push.FlutterRustorePushService"
